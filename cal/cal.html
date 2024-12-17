@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Calculator</h1>
+        <div class="calculator mx-auto">
+            <!-- Display Screen -->
+            <input type="text" id="display" class="form-control mb-3 text-right" placeholder="0" disabled>
+
+            
+            <div class="buttons">
+                
+                <button class="btn btn-danger" onclick="clearDisplay()">AC</button>
+                <button class="btn btn-warning" onclick="backspace()">⌫</button>
+                <button class="btn btn-secondary" onclick="appendChar('%')">%</button>
+                <button class="btn btn-warning" onclick="appendChar('/')">÷</button>
+
+               
+                <button class="btn btn-light" onclick="appendChar('7')">7</button>
+                <button class="btn btn-light" onclick="appendChar('8')">8</button>
+                <button class="btn btn-light" onclick="appendChar('9')">9</button>
+                <button class="btn btn-warning" onclick="appendChar('*')">×</button>
+
+                
+                <button class="btn btn-light" onclick="appendChar('4')">4</button>
+                <button class="btn btn-light" onclick="appendChar('5')">5</button>
+                <button class="btn btn-light" onclick="appendChar('6')">6</button>
+                <button class="btn btn-warning" onclick="appendChar('-')">-</button>
+
+                
+                <button class="btn btn-light" onclick="appendChar('1')">1</button>
+                <button class="btn btn-light" onclick="appendChar('2')">2</button>
+                <button class="btn btn-light" onclick="appendChar('3')">3</button>
+                <button class="btn btn-warning" onclick="appendChar('+')">+</button>
+
+                
+                <button class="btn btn-light" onclick="appendChar('0')">0</button>
+                <button class="btn btn-light" onclick="appendChar('.')">.</button>
+                <button class="btn btn-secondary" onclick="squareNumber()">x²</button>
+                <button class="btn btn-success" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
